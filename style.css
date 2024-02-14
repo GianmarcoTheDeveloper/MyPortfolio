@@ -30,8 +30,8 @@ body{
 }
 
 .slider img{
-    flex: 1 0 50%;
-    scroll-snap-align: start;
+    flex: 1 0 100%;
+    scroll-snap-align: end;
     object-fit: cover;
 }
 
