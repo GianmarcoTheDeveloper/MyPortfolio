@@ -31,8 +31,14 @@ body{
 
 .slider img{
     flex: 1 0 100%;
-    scroll-snap-align: end;
+    scroll-snap-align: start;
     object-fit: cover;
+}
+
+.slider img:hover{
+    scroll-snap-align: none;
+    object-fit: fill;
+    scroll-snap-align: none;
 }
 
 .slider-nav{
