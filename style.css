@@ -20,7 +20,7 @@ body{
 }
 
 .slider{
-    display: flex;
+    display: none;
     aspect-ratio: 16/9;
     overflow-x: auto;
     scroll-snap-type: x mandatory; 
@@ -35,11 +35,6 @@ body{
     object-fit: cover;
 }
 
-.slider img:hover{
-    scroll-snap-align: none;
-    object-fit: fill;
-    scroll-snap-align: none;
-}
 
 .slider-nav{
     display: flex;
