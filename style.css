@@ -4,13 +4,11 @@
 
 
 body{
-    margin: 0;
     background: rgb(27, 27, 27);
     text-align: center;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
     
 }
 
