@@ -93,7 +93,7 @@ li.active a .text{
     border-radius: 50%;
     border: 6px solid #222327;
     transition: 0.5s;
-    z-index: 0;
+    z-index: index;;
 }
 .indicator::before,
 .indicator::after{
