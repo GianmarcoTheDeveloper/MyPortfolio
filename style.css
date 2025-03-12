@@ -9,36 +9,45 @@ body{
     min-height: 100vh;
     display: flex;
     justify-content: center;
+   
     
 }
 
-.icon, .text{
-    color: #222327;
+
+
+
+
+.icon{
+    color: purple
+}
+
+.text{
+    color:black;
+    background: white;
 }
 
 .navigation{
-    position: relative;
-    width: 350px;
-    height: 70px;
+    position: fixed;
+    width: 160;
+    height: 100%;
+    top: 0;
+    left: 0;
     background: rgb(255, 255, 255);
-    display: flex;
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     font-family: "poppins", sans-serif;
 }
 
 ul{
-    display:   flex;
     width: 350px;
-    padding: 0;
+    padding-top: 80;
+    padding-left: 25;
 }
 
 li{
     position: relative;
     list-style: none;
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 250px;
     z-index: 1;
 }
 
@@ -63,7 +72,7 @@ a .icon {
 }
 
 li.active a .icon{
-    transform: translateY(-25px);
+    transform: translateX(100px);
 }
 
 a .text{
@@ -73,23 +82,23 @@ a .text{
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateX(50px);
 }
 
 li.active a .text{
     opacity: 1;
-    transform: translateY(-1px);
+    transform: translateX(100px) translateY(40px);
 }
 
 .indicator{
     position: absolute;
-    top: -50%;
-    width: 70px;
-    height: 70px;
+    top: 10%;
+    width: 100px;
+    height: 100px;
     background: tomato;
     box-sizing: border-box;
     border-radius: 50%;
-    border: 6px solid rgb(27, 27, 27);
+    border: 12px solid rgb(27, 27, 27);
     transition: 0.5s;
 }
 
@@ -104,25 +113,27 @@ li.active a .text{
 }
 
 .indicator::before{
-    left:-22px;
-    border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 rgb(27, 27, 27);
+    bottom: -22px;
+    right:-10;
+    border-top-right-radius: 50px;
+    box-shadow: 4px -10px 0 0 rgb(27, 27, 27);
 }
 
 .indicator::after{
-    right: -22px;
-    border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 rgb(27, 27, 27);
+    top: -22px;
+    right:-8;
+    border-bottom-right-radius: 50px;
+    box-shadow: 4px 10px 0 0 rgb(27, 27, 27);
 }
 
 li.active~.indicator{
-    --x:0;
-    transform: translateX(var(--x));
+    --y:0;
+    transform: translateY(var(--y));
 }
 
-li:nth-child(2).active~.indicator{--x: 70px;}
-li:nth-child(3).active~.indicator{--x: 140px;}
-li:nth-child(4).active~.indicator{--x: 210px;}
+li:nth-child(2).active~.indicator{--y: 220px;}
+li:nth-child(3).active~.indicator{--y: 440px;}
+li:nth-child(4).active~.indicator{--y: 660px;}
 
 
 
