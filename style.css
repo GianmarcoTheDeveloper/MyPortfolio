@@ -95,7 +95,7 @@ li.active a .text{
     transition: 0.5s;
 }
 .indicator::before,
-.indicator.after{
+.indicator::after{
     content:"";
     position: absolute;
     top: 50%;
