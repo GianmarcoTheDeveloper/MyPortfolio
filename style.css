@@ -5,7 +5,7 @@
 
 body{
     margin: 0;
-    background: rgb(49, 49, 49);
+    background: rgb(27, 27, 27);
     text-align: center;
     min-height: 100vh;
     display: flex;
@@ -91,7 +91,7 @@ li.active a .text{
     background: tomato;
     box-sizing: border-box;
     border-radius: 50%;
-    border: 6px solid rgb(49, 49, 49);
+    border: 6px solid rgb(27, 27, 27);
     transition: 0.5s;
 }
 
