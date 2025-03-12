@@ -65,7 +65,7 @@ a .icon {
 }
 
 li.active a .icon{
-    transform: translateY(-20px);
+    transform: translateY(-5px);
 }
 
 a .text{
@@ -80,7 +80,7 @@ a .text{
 
 li.active a .text{
     opacity: 1;
-    transform: translateY(-10px);
+    transform: translateY(5px);
 }
 
 .indicator{
