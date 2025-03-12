@@ -80,7 +80,7 @@ a .text{
 
 li.active a .text{
     opacity: 1;
-    transform: translateY(50px);
+    transform: translateY(-50px);
 }
 
 .indicator{
