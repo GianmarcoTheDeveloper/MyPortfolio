@@ -108,13 +108,13 @@ li.active a .text{
 .indicator::before{
     left:-22px;
     border-top-right-radius: 20px;
-    box-shadow: 1px -10px 0 0 #222327;
+    box-shadow: 1px -10px 0 0 rgb(27, 27, 27);
 }
 
 .indicator::after{
     right: -22px;
     border-top-left-radius: 20px;
-    box-shadow: -1px -10px 0 0 #222327;
+    box-shadow: -1px -10px 0 0 rgb(27, 27, 27);
 }
 
 li.active~.indicator{
