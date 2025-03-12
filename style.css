@@ -88,14 +88,14 @@ li.active a .text{
     top: -50%;
     width: 70px;
     height: 70px;
-    background-color: rgb(255, 99, 71);
+    background: tomato;
     box-sizing: border-box;
     border-radius: 50%;
     border: 6px solid #222327;
     transition: 0.5s;
 }
 
-/* .indicator::before,
+.indicator::before,
 .indicator::after{
     content:"";
     position: absolute;
@@ -124,7 +124,7 @@ li.active~.indicator{
 
 li:nth-child(2).active~.indicator{--x:70px;}
 li:nth-child(3).active~.indicator{--x:140px;}
-li:nth-child(4).active~.indicator{--x:210px;} */
+li:nth-child(4).active~.indicator{--x:210px;}
 
 
 
