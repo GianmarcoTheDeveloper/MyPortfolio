@@ -86,22 +86,22 @@ li.active a .text{
 .indicator{
     position: absolute;
     top: -50%;
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
     background: tomato;
     box-sizing: border-box;
     border-radius: 50%;
     border: 6px solid #222327;
     transition: 0.5s;
-    z-index: index;;
+    
 }
 .indicator::before,
 .indicator::after{
     content:"";
     position: absolute;
     top: 50%;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 20px;
     background: transparent;
 }
 
@@ -118,7 +118,7 @@ li.active a .text{
 }
 
 li.active~.indicator{
-    --x:0;
+    x:0;
     transform: translateX(var(--x));
 }
 
@@ -130,7 +130,7 @@ li:nth-child(4).active~.indicator{--x:210px;}
 
 /* main page projects slider... ends at slider a:hover*/ 
 
-.container{
+/* .container{
     padding: 2rem;
 }
 
@@ -180,4 +180,4 @@ li:nth-child(4).active~.indicator{--x:210px;}
     opacity: 1;
 }
 
-
+ */
