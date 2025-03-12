@@ -88,7 +88,7 @@ li.active a .text{
     top: -50%;
     width: 70px;
     height: 70px;
-    background: tomato;
+    background: rgb(255, 99, 71);
     box-sizing: border-box;
     border-radius: 50%;
     border: 6px solid #222327;
