@@ -20,7 +20,7 @@ body{
 
 .navigation{
     position: relative;
-    width: 550px;
+    width: 700px;
     height: 70px;
     background: rgb(255, 255, 255);
     display: flex;
@@ -83,9 +83,9 @@ li.active a .text{
     transform: translateY(10px);
 }
 
-.indicator{
+/* .indicator{
     position: absolute;
-    top: 50%;
+    top: -50%;
     width: 100px;
     height: 100px;
     background: tomato;
@@ -93,7 +93,7 @@ li.active a .text{
     border-radius: 50%;
     border: 6px solid #222327;
     transition: 0.5s;
-}
+} */
 .indicator::before,
 .indicator::after{
     content:"";
