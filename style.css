@@ -83,7 +83,17 @@ li.active a .text{
     transform: translateY(10px);
 }
 
-
+.indicator{
+    position: absolute;
+    top: -50%;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(255, 99, 71);
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 6px solid #222327;
+    transition: 0.5s;
+}
 
 /* .indicator::before,
 .indicator::after{
