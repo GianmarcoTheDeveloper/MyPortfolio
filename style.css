@@ -75,7 +75,7 @@ a .text{
     letter-spacing: 0.05em;
     transition: 0.5s;
     opacity: 0;
-    transform: translateY(50px);
+    transform: translateY(-15px);
 }
 
 li.active a .text{
