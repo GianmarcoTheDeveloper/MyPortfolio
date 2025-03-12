@@ -91,7 +91,7 @@ li.active a .text{
     background: tomato;
     box-sizing: border-box;
     border-radius: 50%;
-    border: 6px solid #222327;
+    border: 6px solid rgb(49, 49, 49);
     transition: 0.5s;
 }
 
