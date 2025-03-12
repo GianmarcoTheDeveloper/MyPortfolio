@@ -114,7 +114,7 @@ li.active a .text{
 .indicator::after{
     right: -22px;
     border-top-left-radius: 20px;
-    box-shadow: 1px -10px 0 0 #222327;
+    box-shadow: -1px -10px 0 0 #222327;
 }
 
 li.active~.indicator{
