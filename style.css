@@ -18,12 +18,11 @@ body{
 
 
 .icon{
-    color: purple
+    color: darkslategrey
 }
 
 .text{
     color:black;
-    background: white;
 }
 
 .navigation{
@@ -32,7 +31,7 @@ body{
     height: 100%;
     top: 0;
     left: 0;
-    background: rgb(255, 255, 255);
+    background: black;
     border-radius: 10px;
     font-family: "poppins", sans-serif;
 }
@@ -72,7 +71,7 @@ a .icon {
 }
 
 li.active a .icon{
-    transform: translateX(100px);
+    transform: translateX(70px);
 }
 
 a .text{
@@ -87,15 +86,16 @@ a .text{
 
 li.active a .text{
     opacity: 1;
-    transform: translateX(100px) translateY(40px);
+    transform: translateX(70px) translateY(30px);
 }
 
 .indicator{
     position: absolute;
-    top: 10%;
+    top: 7%;
+    right: -60;
     width: 100px;
     height: 100px;
-    background: tomato;
+    background: seagreen;
     box-sizing: border-box;
     border-radius: 50%;
     border: 12px solid rgb(27, 27, 27);
@@ -113,15 +113,15 @@ li.active a .text{
 }
 
 .indicator::before{
-    bottom: -22px;
-    right:-10;
+    top: 82px;
+    right: 45;
     border-top-right-radius: 50px;
     box-shadow: 4px -10px 0 0 rgb(27, 27, 27);
 }
 
 .indicator::after{
-    top: -22px;
-    right:-8;
+    top: -26.5px;
+    right: 45;
     border-bottom-right-radius: 50px;
     box-shadow: 4px 10px 0 0 rgb(27, 27, 27);
 }
@@ -131,9 +131,9 @@ li.active~.indicator{
     transform: translateY(var(--y));
 }
 
-li:nth-child(2).active~.indicator{--y: 220px;}
-li:nth-child(3).active~.indicator{--y: 440px;}
-li:nth-child(4).active~.indicator{--y: 660px;}
+li:nth-child(2).active~.indicator{--y: 250px;}
+li:nth-child(3).active~.indicator{--y: 500px;}
+li:nth-child(4).active~.indicator{--y: 750px;}
 
 
 
