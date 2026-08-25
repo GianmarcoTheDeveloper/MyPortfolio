@@ -27,8 +27,8 @@ body{
 
 .navigation{
     position: fixed;
-    width: 160;
-    height: 100%;
+    width: 160px;
+    height: 100vh;
     top: 0;
     left: 0;
     background: black;
@@ -36,13 +36,14 @@ body{
     font-family: "poppins", sans-serif;
 }
 
-ul{
-    width: 350px;
-    padding-top: 80;
-    padding-left: 25;
+.navigation ul{
+    position: relative;
+    width: 150px;
+    padding: 80px 0 0 25px;
+    margin: 0;
 }
 
-li{
+.navigation li{
     position: relative;
     list-style: none;
     width: 150px;
@@ -91,8 +92,8 @@ li.active a .text{
 
 .indicator{
     position: absolute;
-    top: 7%;
-    right: -60;
+    top: 80px;
+    right: -60px;
     width: 100px;
     height: 100px;
     background: seagreen;
@@ -114,14 +115,14 @@ li.active a .text{
 
 .indicator::before{
     top: 82px;
-    right: 45;
+    right: 45px;
     border-top-right-radius: 50px;
     box-shadow: 4px -10px 0 0 rgb(27, 27, 27);
 }
 
 .indicator::after{
     top: -26.5px;
-    right: 45;
+    right: 45px;
     border-bottom-right-radius: 50px;
     box-shadow: 4px 10px 0 0 rgb(27, 27, 27);
 }
@@ -131,62 +132,6 @@ li.active~.indicator{
     transform: translateY(var(--y));
 }
 
-li:nth-child(2).active~.indicator{--y: 250px;}
+/* li:nth-child(2).active~.indicator{--y: 250px;}
 li:nth-child(3).active~.indicator{--y: 500px;}
-li:nth-child(4).active~.indicator{--y: 750px;}
-
-
-
-/* main page projects slider... ends at slider a:hover*/ 
-
-/* .container{
-    padding: 2rem;
-}
-
-.slider-wrapper{
-    position: relative;
-    max-width: 48rem; 
-    margin: 0 auto;
-}
-
-.slider{
-    display: flex;
-    aspect-ratio: 16/9;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory; 
-    scroll-behavior: smooth;
-    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
-    border-radius: 0.5rem;
-}
-
-.slider img{
-    flex: 1 0 100%;
-    scroll-snap-align: end;
-    object-fit: cover;
-}
-
-
-.slider-nav{
-    display: flex;
-    column-gap: 1rem;
-    position: absolute;
-    bottom: 1.25rem;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
-}
-
-.slider-nav a{
-    width: 0.5rem;
-    height: 0.5rem;
-    border-radius: 50%;
-    background-color: #fff;
-    opacity: 0.75;
-    transition: opacity ease 250ms;
-}
-
-.slider-nav a:hover{
-    opacity: 1;
-}
-
- */
+li:nth-child(4).active~.indicator{--y: 750px;} */

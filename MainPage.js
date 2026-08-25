@@ -1,4 +1,4 @@
-const $list = document.querySelectorAll('li');
+const $list = document.querySelectorAll('.navigation li');
 
 function activeLink()
 {
