@@ -1,31 +1,23 @@
-
 @import url("https://use.fontawesome.com/releases/v6.4.2/css/all.css");
 @import url("https://fonts.googleapis.com/css?family=Poppins");
 
-
-body{
+body {
     background: rgb(27, 27, 27);
     text-align: center;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-   
-    
 }
 
-
-
-
-
-.icon{
-    color: darkslategrey
+.icon {
+    color: darkslategrey;
 }
 
-.text{
-    color:black;
+.text {
+    color: black;
 }
 
-.navigation{
+.navigation {
     position: fixed;
     width: 160px;
     height: 100vh;
@@ -33,17 +25,18 @@ body{
     left: 0;
     background: black;
     border-radius: 10px;
-    font-family: "poppins", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
-.navigation ul{
+.navigation ul {
     position: relative;
-    width: 150px;
-    padding: 80px 0 0 25px;
+    width: 350px;
+    padding-top: 80px;
+    padding-left: 25px;
     margin: 0;
 }
 
-.navigation li{
+.navigation li {
     position: relative;
     list-style: none;
     width: 150px;
@@ -51,7 +44,7 @@ body{
     z-index: 1;
 }
 
-li a {
+.navigation li a {
     position: relative;
     display: flex;
     justify-content: center;
@@ -71,11 +64,11 @@ a .icon {
     transition: 0.5s;
 }
 
-li.active a .icon{
+li.active a .icon {
     transform: translateX(70px);
 }
 
-a .text{
+a .text {
     position: absolute;
     font-weight: 400;
     font-size: 0.75em;
@@ -85,12 +78,15 @@ a .text{
     transform: translateX(50px);
 }
 
-li.active a .text{
+li.active a .text {
     opacity: 1;
     transform: translateX(70px) translateY(30px);
 }
 
-.indicator{
+
+/* INDICATOR */
+
+.indicator {
     position: absolute;
     top: 80px;
     right: -60px;
@@ -100,38 +96,31 @@ li.active a .text{
     box-sizing: border-box;
     border-radius: 50%;
     border: 12px solid rgb(27, 27, 27);
-    transition: 0.5s;
+    transition: transform 0.5s;
 }
 
+
+/* INDICATOR CUTOUTS */
+
 .indicator::before,
-.indicator::after{
-    content:"";
+.indicator::after {
+    content: "";
     position: absolute;
-    top: 50%;
     width: 20px;
     height: 20px;
     background: transparent;
 }
 
-.indicator::before{
+.indicator::before {
     top: 82px;
     right: 45px;
     border-top-right-radius: 50px;
     box-shadow: 4px -10px 0 0 rgb(27, 27, 27);
 }
 
-.indicator::after{
+.indicator::after {
     top: -26.5px;
     right: 45px;
     border-bottom-right-radius: 50px;
     box-shadow: 4px 10px 0 0 rgb(27, 27, 27);
 }
-
-li.active~.indicator{
-    --y:0;
-    transform: translateY(var(--y));
-}
-
-/* li:nth-child(2).active~.indicator{--y: 250px;}
-li:nth-child(3).active~.indicator{--y: 500px;}
-li:nth-child(4).active~.indicator{--y: 750px;} */
