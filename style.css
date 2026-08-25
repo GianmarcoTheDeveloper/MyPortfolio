@@ -3,11 +3,49 @@
 
 body {
     background: rgb(27, 27, 27);
-    text-align: center;
     min-height: 100vh;
+    margin: 0;
+}
+
+
+.main {
+   margin-left: 160px;
+   margin-top: 50px;
+    width: calc(100% - 160px);
+    text-align: center;
+    color:darkgrey;
+}
+
+
+.roles {
+     margin-left: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    margin-top: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: darkgrey;
+    font-size: 40px;
+}
+
+.check {
     display: flex;
     justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+    border: 2px solid seagreen;
+    border-radius: 4px;
+    color: seagreen;
+    font-weight: bold;
 }
+
 
 .icon {
     color: darkslategrey;
