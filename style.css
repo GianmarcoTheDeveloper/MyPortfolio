@@ -60,7 +60,14 @@ body {
     font-size: 30;
 }
 
+.subsection ul {
+    position: center;
+    list-style-position: inside;
+}
 
+.subsection li {
+    font-size: 20px;
+}
 
 .icon {
     color: darkslategrey;
@@ -141,7 +148,7 @@ li.active a .text {
 
 .indicator {
     position: absolute;
-    top: 110px;
+    top: 120px;
     right: -60px;
     width: 100px;
     height: 100px;
