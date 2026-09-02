@@ -5,6 +5,7 @@ html{
     scroll-behavior: smooth;
 }
 
+
 body {
     background: rgb(27, 27, 27);
     min-height: 100vh;
@@ -100,7 +101,7 @@ body {
 
 .navigation ul {
     position: relative;
-    padding-top: 80px;
+    padding-top: 70px;
     padding-left: 25px;
     margin: 0;
 }
@@ -109,7 +110,7 @@ body {
     position: relative;
     list-style: none;
     width: 150px;
-    height: 250px;
+    height: 180px;
     z-index: 1;
 }
 
@@ -140,7 +141,7 @@ li.active a .icon {
 a .text {
     position: absolute;
     font-weight: 400;
-    font-size: 0.75em;
+    font-size: 0.70em;
     font-weight: bold;
     letter-spacing: 0.05em;
     transition: 0.5s;
@@ -150,7 +151,7 @@ a .text {
 
 li.active a .text {
     opacity: 1;
-    transform: translateX(70px) translateY(30px);
+    transform: translateX(70px) translateY(25px);
 }
 
 
